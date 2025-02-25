@@ -39,8 +39,8 @@ namespace tickter.Controllers
             return Ok("Ticket Saved Successfully");
         }
 
-        // Read all
-        [HttpGet]
+        // Read all new changes
+        [HttpGet] 
         public async Task<ActionResult<IEnumerable<GetTicketDto>>> GetTickets(string? q)
         {
             // search
